@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Cine {
+    public static void main(String[] args) {
+        try (Scanner scanner = new Scanner(System.in)) {
+            char[][] sala = new char[10][20];
+            
+            for (int i = 0; i < sala.length; i++) {
+                for (int j = 0; j < sala[i].length; j++) {
+                    sala[i][j] = 'L';
+                }
+            }
+            
+            int opcao;
+            do {
+                System.out.println("\n===== Bem-vindo ao CineDev =====");
+                System.out.println("1. Exibir Mapa de Assentos");
+                System.out.println("2. Comprar Ingresso");
+                System.out.println("3. Cancelar Compra de Ingresso");
+                System.out.println("4. Exibir Relatório de Ocupação");
+                System.out.println("5. Sair");
+                System.out.print("Escolha uma opção: ");
+                opcao = scanner.nextInt();
+                
+                switch (opcao) {
+                    case 1 -> exibirMapa(sala);
+                    case 2 -> comprarIngresso(sala, scanner);
+                    case 3 -> cancelarIngresso(sala, scanner);
+                    case 4 -> exibirRelatorio(sala);
+                    case 5 -> System.out.println("Encerrando o programa. Até logo!");
+                    default -> System.out.println("Opção inválida. Tente novamente.");
+                }
+            } while (opcao != 5);
+        }
+    }
+    
+            public static void exibirMapa(char[][] sala) { }
+            public static void comprarIngresso(char[][] sala, Scanner scanner) { }
+            public static void cancelarIngresso(char[][] sala, Scanner scanner) { }
+            public static void exibirRelatorio(char[][] sala) { }
+}
