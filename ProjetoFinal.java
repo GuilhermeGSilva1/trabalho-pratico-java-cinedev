@@ -9,8 +9,7 @@ public class trabalho-pratico-java-cinedev {
             for (int j = 0; j < sala[i].length; j++) {
                 sala[i][j] = 'L';
             }
-        }
-
+    
         int opcao;
         do {
             System.out.println("\n===== Bem-vindo ao CineDev =====");
