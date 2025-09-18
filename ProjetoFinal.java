@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Cine {
+public class trabalho-pratico-java-cinedev {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         char[][] sala = new char[10][20];
